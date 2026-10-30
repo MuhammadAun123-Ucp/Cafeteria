@@ -1,0 +1,443 @@
+/* =========================================================
+   Campus Bites - Shared Stylesheet
+   ========================================================= */
+
+/* ===== BASE & HOME PAGE (Team Lead) ===== */
+:root {
+  --primary: #d35400;
+  --primary-dark: #a84300;
+  --accent: #f39c12;
+  --bg: #fdf6ec;
+  --card-bg: #ffffff;
+  --text: #2c2c2c;
+  --muted: #6b6b6b;
+  --border: #ecd9bf;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+/* Header and navigation */
+.site-header {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 24px 16px 0;
+}
+
+.site-header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  background: var(--primary-dark);
+  margin: 0 -16px;
+  padding: 8px;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  background: var(--accent);
+  color: #2c2c2c;
+}
+
+/* Footer */
+.site-footer {
+  background: #2c2c2c;
+  color: #ddd;
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9rem;
+}
+
+/* Shared components */
+.page-title {
+  color: var(--primary-dark);
+  margin-bottom: 8px;
+}
+
+.page-intro {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card h3,
+.card h4 {
+  color: var(--primary-dark);
+  margin-bottom: 8px;
+}
+
+.plain-list {
+  list-style: none;
+}
+
+.plain-list li {
+  padding: 4px 0;
+}
+
+/* Home page */
+.hero {
+  background: var(--card-bg);
+  border-left: 6px solid var(--accent);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.hero h2 {
+  color: var(--primary-dark);
+  margin-bottom: 8px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.quick-links h2 {
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.link-card {
+  display: block;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.link-card span {
+  display: block;
+  font-weight: 400;
+  font-size: 0.85rem;
+  margin-top: 6px;
+  opacity: 0.9;
+}
+
+.link-card:hover {
+  background: var(--primary-dark);
+}
+
+/* Responsive - base layout */
+@media (max-width: 800px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .link-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* ===== MENU PAGE (Member 1) ===== */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.menu-category {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.menu-category h3 {
+  color: var(--primary-dark);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu-table th,
+.menu-table td {
+  text-align: left;
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.menu-table th:last-child,
+.menu-table td:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.menu-table thead th {
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== DEALS PAGE (Member 2) ===== */
+.special-banner {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 28px 16px;
+  margin-bottom: 28px;
+}
+
+.special-banner h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.95rem;
+}
+
+.special-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.special-price {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.old-price {
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.section-title {
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+}
+
+.deal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.deal-card {
+  background: var(--card-bg);
+  border: 2px dashed var(--accent);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.deal-card h4 {
+  color: var(--primary-dark);
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.deal-card ul {
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+
+.deal-price {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+@media (max-width: 700px) {
+  .deal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .special-name {
+    font-size: 1.2rem;
+  }
+}
+
+/* ===== ORDER PAGE (Member 3) ===== */
+.steps {
+  list-style: none;
+  counter-reset: step;
+  margin-bottom: 32px;
+}
+
+.steps li {
+  counter-increment: step;
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 16px 16px 72px;
+  margin-bottom: 12px;
+}
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 50%;
+}
+
+.steps li h3 {
+  color: var(--primary-dark);
+  font-size: 1.1rem;
+}
+
+.guidelines > h3 {
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+}
+
+.guideline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 800px) {
+  .guideline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps li {
+    padding-left: 64px;
+  }
+}
+
+/* ===== FEEDBACK PAGE (Member 4) ===== */
+.feedback-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form label {
+  font-weight: 600;
+  margin: 12px 0 4px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: 2px solid var(--accent);
+  border-color: var(--accent);
+}
+
+.feedback-form button {
+  margin-top: 16px;
+  padding: 12px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background: var(--primary-dark);
+}
+
+@media (max-width: 800px) {
+  .feedback-layout {
+    grid-template-columns: 1fr;
+  }
+}
