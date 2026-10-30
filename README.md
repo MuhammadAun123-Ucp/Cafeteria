@@ -8,11 +8,11 @@ branch protection and `git rebase`).
 
 | Page | File | Owner |
 | --- | --- | --- |
-| Home | `src/index.html` | Team Lead |
-| Menu | `src/menu.html` | Member 1 |
-| Daily Specials & Deals | `src/deals.html` | Member 2 |
-| How to Order | `src/order.html` | Member 3 |
-| Feedback & Contact | `src/feedback.html` | Member 4 |
+| Home | `src/index.html` | Laiba Farooq |
+| Menu | `src/menu.html` | Ali Hussain |
+| Daily Specials & Deals | `src/deals.html` | Ali Ammar Raza |
+| How to Order | `src/order.html` | Muneeb Jahangeer |
+| Feedback & Contact | `src/feedback.html` | Muhammad Aun Ahmad |
 
 All pages share one stylesheet: `styles/style.css`.
 
@@ -42,13 +42,13 @@ campus-cafeteria/
 ## How to Run
 
 No build step is needed. Open `src/index.html` in any web browser.
-
+    
 ## Team
 
 | Name | GitHub Username | Role |
 | --- | --- | --- |
-| (fill in) | (fill in) | Team Lead |
-| (fill in) | (fill in) | Member 1 |
-| (fill in) | (fill in) | Member 2 |
-| (fill in) | (fill in) | Member 3 |
-| (fill in) | (fill in) | Member 4 |
+| Muhammad Aun Ahmad |MuhammadAun-UCP| Team Lead |
+| Ali Hussain |Ali-hussain0138| Member 1 |
+| Ali Ammar Raza | Ali Ammar Raza | Member 2 |
+| Laiba Farooq | l1f23bsse0026 | Member 3 |
+| Muneeb Jahangeer | muneeb | Member 4 |
